@@ -27,7 +27,7 @@ body {
 }
 
 .logo-box {
-    width: 400px;
+    width: 200px;
     margin: auto;
     padding: 20px 0;
 }
@@ -108,6 +108,10 @@ body {
     font-weight: 400 !important;
 }
 
+.header{
+        background: #111;
+}
+
 .search-all {
     background-color: #444;
     border-color: #111;
@@ -157,8 +161,12 @@ body {
     width: 100%;
 }
 
+.home-slide .slick-prev {
+    left: -40px;
+}
+
 .slick-slide {
-    margin: 0px 20px;
+    /*margin: 0px 20px;*/
 }
 
     .slick-slide img {
@@ -507,8 +515,11 @@ label.show-hide-content-action {
         color: #ccc;
     }
 
-.gray-link-lt:link {
+.gray-link-lt {
     color: #ccc;
+}
+.gray-link-lt:hover {
+    color: #fff;
 }
 
 .footer-headers {
