@@ -27,7 +27,7 @@ body {
 }
 
 .logo-box {
-    width: 200px;
+    width: 140px;
     margin: auto;
     padding: 20px 0;
 }
@@ -108,8 +108,8 @@ body {
     font-weight: 400 !important;
 }
 
-.header{
-        background: #111;
+.header {
+    background: #111;
 }
 
 .search-all {
@@ -166,7 +166,7 @@ body {
 }
 
 .slick-slide {
-    /*margin: 0px 20px;*/
+       margin: 0px 10px;
 }
 
     .slick-slide img {
@@ -518,9 +518,10 @@ label.show-hide-content-action {
 .gray-link-lt {
     color: #ccc;
 }
-.gray-link-lt:hover {
-    color: #fff;
-}
+
+    .gray-link-lt:hover {
+        color: #fff;
+    }
 
 .footer-headers {
     text-transform: uppercase;
@@ -540,5 +541,87 @@ label.show-hide-content-action {
     }
 
 .footer-logo img {
+    width: 60%;
+}
+
+.home-article{
+    padding: 40px 0;
+}
+
+.recent-post .media {
+    background-color: #ffffff;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.recent-post .media-link {
+    padding: 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+}
+
+.recent-post.alt .media-link .media-object {
+    width: 100%;
+    max-width: 100%;
+}
+
+.recent-post .media-body {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 10px;
+}
+
+.recent-post .media-heading {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+    .recent-post .media-heading a {
+        color: #2a3942;
+    }
+
+.recent-post .media-excerpt {
+    font-weight: 100;
+    line-height: 24px;
+}
+.widget-categories ul li a:before {
+    content: '\f0a9';
+    font-family: 'FontAwesome';
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.widget-categories ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.widget-categories ul li a {
+    display: block;
+    padding: 5px 0 5px 20px;
+    position: relative;
+    color: #111;
+}
+.widget-categories ul li a:hover:before {
+    color: #e7c568;
+}
+.widget-categories ul li + li {
+    border-top: solid 1px rgba(0, 0, 0, 0.1);
+}
+.ngay_tt{
+        color: #a09c9c;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.home-gift{
+    padding: 40px 0;
+}
+
+.gift-list-item img{
     width: 100%;
 }
