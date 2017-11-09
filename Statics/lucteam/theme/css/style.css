@@ -171,6 +171,11 @@ body {
     left: -40px;
 }
 
+.home-slide .slick-slide {
+       margin: 0px;
+}
+
+
 .slick-slide {
        margin: 0px 10px;
 }
