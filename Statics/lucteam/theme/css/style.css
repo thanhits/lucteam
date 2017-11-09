@@ -318,14 +318,16 @@ label.show-hide-content-action {
 
 .home-dramma {
     padding: 40px 0;
-    padding: 40px 0;
     background: rgba(24,22,22,1);
     color: #fff;
 }
 
 .hot-dramma {
-    display: flex;
-    padding: 20px 0;
+     display: flex;
+    padding: 10px;
+    border: 1px solid #e7c568;
+    background: #e7c568;
+    color: #111;
 }
 
     .hot-dramma .hot-dramma__timestamp {
@@ -368,30 +370,35 @@ label.show-hide-content-action {
         }
 
     .hot-dramma .hot-dramma__title {
-        font-size: 30px;
-        font-weight: 300;
-        color: #e7c568;
+        font-size: 36px;
+        font-weight: 600;
+        color: #111;
         margin: 0;
     }
 
+      .hot-dramma .hot-dramma__image img {
+        height: 100%;
+        width: auto;
+    }
+
     .hot-dramma .hot-dramma__image {
-        display: flex;
-        margin: 3vh 15px;
+        /*display: flex;*/
+        /*margin: 3vh 15px;*/
         z-index: 1;
     }
 
     .hot-dramma .hot-dramma__image {
-        width: 12.5vh;
+        /*width: 12.5vh;
         background-size: cover;
-        background-position: center center;
+        background-position: center center;*/
         margin: 0;
         flex-shrink: 0;
         align-self: stretch;
     }
 
     .hot-dramma .hot-dramma__image {
-        width: 22rem;
-        max-width: 100%;
+        /*width: 22rem;
+        max-width: 100%;*/
         height: 500px;
     }
 
