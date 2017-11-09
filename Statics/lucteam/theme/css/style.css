@@ -82,6 +82,12 @@ body {
     width: 100%;
     height: 50px;
     font-size: 20px;
+        background: #e7c568;
+}
+
+.search-btn:hover {
+    color: #fff;
+    background: #e7c568;
 }
 
 .menu-main > li > a {
@@ -104,7 +110,7 @@ body {
 
 .menu-second li a {
     font-size: 13px !important;
-    color: #b3d7ec !important;
+    color: #e7c568  !important;
     font-weight: 400 !important;
 }
 
@@ -620,8 +626,38 @@ label.show-hide-content-action {
 
 .home-gift{
     padding: 40px 0;
+    background : #222;
+    color: #fff;
+        background-color: #111111;
+    background-image: -webkit-linear-gradient(top, #111 0%, #1a2b38 100%);
+    background-image: linear-gradient(to bottom, #111 0%, #1a2b38 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF111111', endColorstr='#FF1A2B38', GradientType=0);
 }
 
 .gift-list-item img{
     width: 100%;
+}
+
+.more-btn-box{
+    padding: 20px 0;
+}
+
+.more-btn{
+    font-size: 24px;
+    background: #e7c568;
+    box-shadow: #111 0px 1px 0px 0px;
+    background-image: -webkit-linear-gradient(top, #e7c568 0%, #e7c568 100%);
+    background-image: linear-gradient(to bottom, #e7c568 0%, #e7c568 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF429BFF', endColorstr='#FF0069E0', GradientType=0);
+    background-size: auto 200%;
+    background-position: 0 100%;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    padding: 12px 40px;
+}
+
+.more-btn:hover{
+    color: #fff;
 }
