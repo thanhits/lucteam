@@ -694,7 +694,14 @@
         _longitude = 105.818718;
         google.maps.event.addDomListener(window, 'load', contactUsMap(_latitude, _longitude));
 
-    
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 300) {
+                $('nav').addClass('fixed-header');
+            }
+            else {
+                $('nav').removeClass('fixed-header');
+            }
+        });
 
         $('#datepicker').datetimepicker({
             minDate: moment(),
