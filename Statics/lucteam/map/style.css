@@ -1,0 +1,618 @@
+/*------------------------------------------------------------------
+Project:	Zoner - Real Estate HTML Template
+Version:	1.0
+Last change:	11.1.2015
+Assigned to:	ThemeStarz
+
+[Table of contents]
+
+1. Elements styling
+2. Styling for specific pages
+3. Universal Classes
+4. Header
+5. Footer
+6. Content
+7. Responsive
+
+[Color codes]
+
+Default: #1396e2;
+Grey dark: #2a2a2a;
+Grey medium: #5a5a5a;
+Grey light: #f3f3f3;
+
+[Typography]
+
+Body copy:		'Roboto', sans-serif; 14px;
+Headers:		'Roboto', sans-serif;
+
+-------------------------------------------------------------------*/
+
+
+.property-detail-map-wrapper {
+  position: relative;
+  height: 340px;
+}
+.property-detail-map-wrapper .property-detail-map {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.submit-pricing {
+  border: 2px solid #f3f3f3;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+}
+.submit-pricing table {
+  margin-bottom: 0;
+}
+.submit-pricing table thead tr th {
+  border: none;
+  font-weight: lighter;
+  font-size: 18px;
+  padding: 0;
+  width: 25%;
+  vertical-align: middle;
+}
+.submit-pricing table thead tr th.title {
+  color: #1396e2;
+  font-size: 24px;
+  text-align: center;
+}
+.submit-pricing table tbody tr td {
+  border: none;
+  border-top: 2px solid #f3f3f3;
+  font-size: 12px;
+  width: 25%;
+  vertical-align: middle;
+  padding: 10px 0;
+  text-align: center;
+}
+.submit-pricing table tbody tr td:first-child {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  text-align: left;
+}
+.submit-pricing table tbody tr td.not-available {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+.submit-pricing table tbody tr td.available {
+  color: #1396e2;
+}
+.submit-pricing table tbody tr.buttons {
+  padding-bottom: 0;
+}
+.submit-pricing table tbody tr.buttons td {
+  border: none;
+}
+.submit-pricing table tbody tr.buttons td:after {
+  text-shadow: none;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'fontawesome';
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+  color: #5a5a5a;
+  content: "\f05d";
+  display: none;
+  font-size: 20px;
+}
+.submit-pricing table tbody tr.buttons td.package-selected:after {
+  display: inline-block;
+}
+.submit-pricing table tbody tr.buttons td.package-selected .btn {
+  display: none;
+}
+.submit-pricing table tbody tr.prices td {
+  border: none;
+  color: #073855;
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+.submit-step {
+  padding-left: 50px;
+  padding-top: 10px;
+  position: relative;
+}
+.submit-step .step-number {
+  background-color: #1396e2;
+  color: #fff;
+  height: 35px;
+  left: 0;
+  width: 35px;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 35px;
+}
+.submit-step .step-number:after {
+  bottom: -7px;
+  content: "";
+  height: 0px;
+  border-style: solid;
+  border-width: 0px 10px 10px 10px;
+  border-color: transparent transparent transparent #1396e2;
+  position: absolute;
+  left: 0;
+  width: 0px;
+}
+.submit-step .description h4 {
+  color: #2a2a2a;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.submit-features {
+  list-style: none;
+  padding-left: 0;
+}
+.submit-features li {
+  display: inline-block;
+  width: 33%;
+}
+.submit-features li label {
+  font-weight: normal;
+}
+
+#submit-map {
+  height: 320px;
+  width: 100%;
+}
+
+
+#map {
+  width: 100%;
+  height: 700px;
+}
+
+#contact-map {
+  height: 300px;
+  width: 100%;
+}
+
+
+
+.marker-style {
+    font-family: FontAwesome;
+    border: 3px solid #ffe400;
+    text-align: center;
+        font-size: 16px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-left: -17px !important;
+    margin-top: -46px !important;
+}
+
+.marker-style::before {
+    content: "\f0ad";
+    line-height: 28px;
+}
+/*.marker-style img {
+  position: absolute !important;
+  top: -1px !important;
+  bottom: 0px !important;
+  right: 0px;
+  left: 0px;
+  margin: auto !important;
+}*/
+
+
+#submit-map {
+  margin-bottom: 20px;
+}
+
+.fade-map {
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+}
+
+.map-osm #map {
+  z-index: 0;
+  position: relative;
+}
+
+.marker-cluster {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #fff;
+  width: 32px;
+  height: 38px;
+  background-color: #1396e2;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 38px;
+}
+.marker-cluster:hover {
+  background-color: #073855;
+}
+
+
+.search-box .form-map {
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 5px 10px 1px 10px;
+}
+.search-box .form-map:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.search-box .form-map input[type="text"], .search-box .form-map input[type="email"], .search-box .form-map input[type="search"], .search-box .form-map input[type="password"], .search-box .form-map input[type="number"], .search-box .form-map textarea, .search-box .form-map select, .search-box .form-map .selectpicker, .search-box .form-map .price-range {
+  background-color: #073855;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 40px;
+  padding: 10px 9px 9px 9px;
+  width: 100%;
+}
+.search-box .form-map input[type="text"]:hover, .search-box .form-map input[type="email"]:hover, .search-box .form-map input[type="search"]:hover, .search-box .form-map input[type="password"]:hover, .search-box .form-map input[type="number"]:hover, .search-box .form-map textarea:hover, .search-box .form-map select:hover, .search-box .form-map .selectpicker:hover, .search-box .form-map .price-range:hover {
+  background-color: #062f47;
+}
+.search-box .form-map .selectpicker .caret:after {
+  color: #fff;
+}
+.search-box .form-map .price-range {
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  padding: 15px 15px 10px;
+}
+.search-box .form-map .jslider-label, .search-box .form-map .jslider-value {
+  color: #fff;
+}
+
+.horizontal-search .search-box-wrapper .search-box .form-map {
+  background-color: transparent;
+  padding: 0;
+  margin-top: 20px;
+}
+.horizontal-search .search-box-wrapper .search-box .form-map input[type="text"], .horizontal-search .search-box-wrapper .search-box .form-map input[type="email"], .horizontal-search .search-box-wrapper .search-box .form-map input[type="search"], .horizontal-search .search-box-wrapper .search-box .form-map input[type="password"], .horizontal-search .search-box-wrapper .search-box .form-map input[type="number"], .horizontal-search .search-box-wrapper .search-box .form-map textarea, .horizontal-search .search-box-wrapper .search-box .form-map select, .horizontal-search .search-box-wrapper .search-box .form-map .selectpicker, .horizontal-search .search-box-wrapper .search-box .form-map .price-range {
+  background-color: #fff;
+  color: #5a5a5a;
+}
+.horizontal-search .search-box-wrapper .search-box .form-map input[type="text"]:hover, .horizontal-search .search-box-wrapper .search-box .form-map input[type="email"]:hover, .horizontal-search .search-box-wrapper .search-box .form-map input[type="search"]:hover, .horizontal-search .search-box-wrapper .search-box .form-map input[type="password"]:hover, .horizontal-search .search-box-wrapper .search-box .form-map input[type="number"]:hover, .horizontal-search .search-box-wrapper .search-box .form-map textarea:hover, .horizontal-search .search-box-wrapper .search-box .form-map select:hover, .horizontal-search .search-box-wrapper .search-box .form-map .selectpicker:hover, .horizontal-search .search-box-wrapper .search-box .form-map .price-range:hover {
+  background-color: #f3f3f3;
+}
+.horizontal-search .search-box-wrapper .search-box .form-map button {
+  background-color: #073855;
+}
+.horizontal-search .search-box-wrapper .search-box .form-map .selectpicker .caret:after {
+  color: #1396e2;
+}
+.horizontal-search .search-box-wrapper .search-box .form-map .jslider-label, .horizontal-search .search-box-wrapper .search-box .form-map .jslider-value {
+  color: #5a5a5a;
+}
+
+.horizontal-search-float .search-box .form-map {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px 15px 5px 15px;
+}
+.horizontal-search-float .search-box .form-map:hover {
+  background-color: white;
+}
+.horizontal-search-float .search-box .form-map input[type="text"], .horizontal-search-float .search-box .form-map input[type="email"], .horizontal-search-float .search-box .form-map input[type="search"], .horizontal-search-float .search-box .form-map input[type="password"], .horizontal-search-float .search-box .form-map input[type="number"], .horizontal-search-float .search-box .form-map textarea, .horizontal-search-float .search-box .form-map select, .horizontal-search-float .search-box .form-map .selectpicker, .horizontal-search-float .search-box .form-map .price-range {
+  background-color: #073855;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 40px;
+  padding: inherit;
+  padding-left: 10px;
+  width: 100%;
+}
+.horizontal-search-float .search-box .form-map input[type="text"]:hover, .horizontal-search-float .search-box .form-map input[type="email"]:hover, .horizontal-search-float .search-box .form-map input[type="search"]:hover, .horizontal-search-float .search-box .form-map input[type="password"]:hover, .horizontal-search-float .search-box .form-map input[type="number"]:hover, .horizontal-search-float .search-box .form-map textarea:hover, .horizontal-search-float .search-box .form-map select:hover, .horizontal-search-float .search-box .form-map .selectpicker:hover, .horizontal-search-float .search-box .form-map .price-range:hover {
+  background-color: #062f47;
+}
+.horizontal-search-float .search-box .form-map .price-range {
+  margin-bottom: 0;
+  padding: 15px 15px 10px;
+}
+.horizontal-search-float .search-box .form-map .jslider-label, .horizontal-search-float .search-box .form-map .jslider-value {
+  color: #fff;
+}
+
+
+
+@media (max-width: 767px) {
+ 
+    .form-map {
+        background-color: transparent !important;
+        padding: 0 !important;
+    }
+
+   
+
+    .map-osm #map:after {
+        display: none;
+    }
+
+    #map {
+        margin-top: 0 !important;
+    }
+
+        #map:after {
+            -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+            text-shadow: none;
+            -webkit-font-smoothing: antialiased;
+            font-family: 'fontawesome';
+            speak: none;
+            font-weight: normal;
+            font-variant: normal;
+            line-height: 1;
+            text-transform: none;
+            color: #2a2a2a;
+            font-size: 18px;
+            position: absolute;
+            bottom: 30px;
+            background-color: #fff;
+            content: "\f07d";
+            padding: 12px 16px;
+            right: 15px;
+            z-index: 1;
+        }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    #map {
+    width: 100%;
+    height: 700px;
+}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    #map {
+    width: 100%;
+    height: 400px;
+}
+}
+
+
+.geo-location-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+    .geo-location-wrapper:hover .text {
+        filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+        opacity: 1;
+        right: 50px;
+        pointer-events: none;
+    }
+
+    .geo-location-wrapper .btn {
+        background-color: #fff;
+        color: #39B54A;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 38px;
+    }
+
+        .geo-location-wrapper .btn:hover {
+            background-color: #fff;
+            color: #1396e2;
+        }
+
+    .geo-location-wrapper .fa {
+        font-size: 20px;
+    }
+
+    .geo-location-wrapper .text {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+        -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+        -moz-transition: 0.4s;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        color: #fff;
+        background-color: #073855;
+        padding: 10px;
+        position: absolute;
+        right: 40px;
+        text-align: right;
+        top: 0;
+        pointer-events: none;
+    }
+
+        .geo-location-wrapper .text:after {
+            width: 0;
+            height: 0;
+            content: "";
+            border-style: solid;
+            border-width: 4px 0 4px 4px;
+            border-color: transparent transparent transparent #073855;
+            position: absolute;
+            top: 0;
+            right: -4px;
+            bottom: 0;
+            margin: auto;
+        }
+
+
+
+
+
+.marker-style {
+    font-family: FontAwesome;
+    border: 3px solid #39B54A;
+    text-align: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-left: -17px !important;
+    margin-top: -46px !important;
+}
+
+.marker-style::before {
+    content: "\f1b9";
+    line-height: 28px;
+}
+
+.marker-style img {
+    position: absolute !important;
+    top: -1px !important;
+    bottom: 0px !important;
+    right: 0px;
+    left: 0px;
+    margin: auto !important;
+}
+
+.infobox-wrapper > img {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    -moz-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    position: absolute !important;
+    right: 8px;
+    top: 13px;
+    z-index: 2;
+}
+
+    .infobox-wrapper > img:hover {
+        filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+        opacity: 1;
+    }
+
+.buttons_map, .rating_map {
+    text-align: center;
+
+}
+
+
+
+.infobox-wrapper .infobox-inner {
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    border-top: 6px solid #39B54A;
+    font-size: 12px;
+    position: relative;
+    margin-bottom: 50px;
+    min-width: 200px;
+
+}
+
+
+    .infobox-wrapper .infobox-inner:after {
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 6px 6px 0 6px;
+        border-color: #fff transparent transparent transparent;
+        position: absolute;
+        left: 95px;
+        content: "";
+        bottom: -6px;
+    }
+
+    .infobox-wrapper .infobox-inner .infobox-image {
+        width: 250px;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+        /*.infobox-wrapper .infobox-inner .infobox-image:after {
+            background: -moz-linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.75) 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(100%, rgba(0, 0, 0, 0.75)));
+            background: -webkit-linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.75) 100%);
+            background: -o-linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.75) 100%);
+            background: -ms-linear-gradient(top, transparent 50%, rgba(0, 0, 0, 0.75) 100%);
+            background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.75) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
+            display: block;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+        }*/
+
+        .infobox-wrapper .infobox-inner .infobox-image img {
+            width: 100%;
+        }
+
+        .infobox-wrapper .infobox-inner .infobox-image .infobox-price {
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+            -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+            -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+            background-color: #1396e2;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 3px 7px;
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+            z-index: 2;
+        }
+
+    .infobox-wrapper .infobox-inner .infobox-title {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+        .infobox-wrapper .infobox-inner .infobox-title a {
+            color: #2A3942;
+        }
+
+    .infobox-wrapper .infobox-inner .infobox-description {
+        padding: 8px;
+    }
+
+    .infobox-wrapper .infobox-inner .infobox-location {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+        opacity: 0.5;
+        font-size: 12px;
+    }
+
+    .infobox-wrapper .infobox-inner .fa {
+        color: #1396e2;
+        float: right;
+        font-size: 18px;
+        margin-top: 4px;
+    }
+
+.marker-hover {
+    opacity: .5;
+}
+
+
+@media screen and (max-width: 768px) {
+    .geo-location-wrapper .btn {
+        right: 45% !important;
+    }
+}

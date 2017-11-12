@@ -208,7 +208,7 @@ bootstrap.scss:1 :after, :before {
 
 .home-about {
     padding: 40px 0;
-        color: #fff;
+    color: #fff;
 }
 
 .area-title {
@@ -303,10 +303,10 @@ label.show-hide-content-action {
     cursor: pointer;
 }
 
-label.show-hide-content-action:hover {
-    border: 1px solid #e7c568;
-    color: #e7c568;
-}
+    label.show-hide-content-action:hover {
+        border: 1px solid #e7c568;
+        color: #e7c568;
+    }
 
 .home-dramma {
     padding: 40px 0;
@@ -627,7 +627,7 @@ label.show-hide-content-action:hover {
         }
 
     .widget-categories ul li + li {
-        border-top: solid 1px rgba(0, 0, 0, 0.1);
+       border-top: solid 1px rgba(249, 249, 249, 0.1);
     }
 
 .ngay_tt {
@@ -638,13 +638,8 @@ label.show-hide-content-action:hover {
 
 .home-gift {
     padding: 40px 0;
-    background: #222;
+    background: rgba(24,22,22,1);
     color: #fff;
-    background-color: #111111;
-    background-image: -webkit-linear-gradient(top, #111 0%, #1a2b38 100%);
-    background-image: linear-gradient(to bottom, #111 0%, #1a2b38 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF111111', endColorstr='#FF1A2B38', GradientType=0);
 }
 
 .gift-list-item img {
@@ -717,7 +712,7 @@ label.show-hide-content-action:hover {
         content: '';
         width: 65%;
         height: 1px;
-          left: 22%;
+        left: 22%;
         background: #e7c568;
         top: 50%;
     }
@@ -766,3 +761,27 @@ label.show-hide-content-action:hover {
             background: #e7c568;
             top: calc(50% - 2.5px);
         }
+
+.home-contact {
+    padding: 40px 0;
+    background: #222;
+    color: #fff;
+    background-color: #111111;
+    background-image: -webkit-linear-gradient(top, #111 0%, #1a2b38 100%);
+    background-image: linear-gradient(to bottom, #111 0%, #1a2b38 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF111111', endColorstr='#FF1A2B38', GradientType=0);
+}
+
+.home-contact h4 {
+        font-size: 32px;
+}
+
+.contact-list {
+    text-align: right;
+}
+
+.contact-list  ul {
+    padding-left: 0;
+    list-style: none;
+}
