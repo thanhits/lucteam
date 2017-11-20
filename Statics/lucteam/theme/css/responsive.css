@@ -58,4 +58,8 @@
     .gift-list-item {
         margin-bottom: 10px;
     }
+
+    .fixed-header {
+        padding-right: 25px;
+    }
 }
