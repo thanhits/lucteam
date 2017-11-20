@@ -317,6 +317,7 @@ bootstrap.scss:1 :after, :before {
 
 .hidden-content_box {
     padding: 10px 15px;
+    text-align: justify;
 }
 
 input[type=checkbox].show-hide-btn {
@@ -417,6 +418,9 @@ label.show-hide-content-action {
     .hot-dramma .hot-dramma__image img {
         height: 100%;
         width: auto;
+    }
+         .hot-dramma .btn-buy__single{
+         font-size: 28px;
     }
 
     .hot-dramma .hot-dramma__image {
@@ -729,6 +733,7 @@ label.show-hide-content-action {
     font-weight: bold;
     line-height: 1.286;
     margin: 0;
+        margin-top: 10px;
 }
 
 .section-header {

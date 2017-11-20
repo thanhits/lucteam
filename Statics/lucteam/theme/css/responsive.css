@@ -1,0 +1,61 @@
+﻿.box__left {
+    float: left !important;
+}
+
+.box__right {
+    float: right !important;
+}
+
+@media (max-width: 768px) {
+    .about-content blockquote {
+        font-size: 22px;
+    }
+
+    .about-content {
+        font-size: 16px;
+    }
+
+    .hidden-content_box {
+        font-size: 16px;
+    }
+
+    .hot-dramma .hot-dramma__image {
+        height: 200px;
+    }
+
+    .hot-dramma .hot-dramma__title {
+        font-size: 26px;
+    }
+
+    .hot-dramma .hot-dramma__timestamp .date-day {
+        font-size: 4.375rem;
+    }
+
+    .hot-dramma .hot-dramma__desciption {
+        font-size: 14px;
+    }
+
+    .hot-dramma .btn-buy__single {
+        font-size: 22px;
+    }
+
+    .dramma-slide-item__timestamp .date-day {
+        font-size: 3.375rem;
+    }
+
+    .dramma-slide-item__timestamp .date-short {
+        font-size: 13px;
+    }
+
+    .dramma-slide-item_info {
+        font-size: 13px;
+    }
+
+    .dramma-slide-item__description {
+        font-size: 12px;
+    }
+
+    .gift-list-item {
+        margin-bottom: 10px;
+    }
+}
