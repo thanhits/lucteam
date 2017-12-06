@@ -29,6 +29,7 @@ body {
     padding-top: 10px;
 }
 
+
 .breadcrumb-list {
     background: #111;
     border-radius: 0;
@@ -193,9 +194,9 @@ body {
     width: 100%;
 }
 
-.home-slide .slick-prev {
+/*.home-slide .slick-prev {
     left: -40px;
-}
+}*/
 
 .home-slide .slick-slide {
     margin: 0px;
@@ -419,8 +420,18 @@ label.show-hide-content-action {
         height: 100%;
         width: auto;
     }
-         .hot-dramma .btn-buy__single{
-         font-size: 28px;
+
+    .hot-dramma .btn-buy__single {
+        font-size: 28px;
+    }
+
+    .home-dramma .btn-buy__single small{
+            display: block;
+    font-size: 12px;
+    }
+
+     .hot-dramma .btn-buy__facebook {
+       background: #0084ff;
     }
 
     .hot-dramma .hot-dramma__image {
@@ -460,13 +471,25 @@ label.show-hide-content-action {
         align-self: flex-start;
     }
 
+    .hot-dramma .hot-dramma__desciption {
+        margin: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 9;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+        .hot-dramma .hot-dramma__desciption p {
+            margin: 0;
+        }
+
 .hot-dramma-slide {
     padding: 3%;
 }
 
-    .hot-dramma-slide .slick-next {
+/*.hot-dramma-slide .slick-next {
         right: -5px;
-    }
+    }*/
 
 
 .dramma-slide-item {
@@ -537,8 +560,17 @@ label.show-hide-content-action {
     color: #e7c568;
 }
 
+.dramma-slide-item__description p {
+    margin: 0;
+}
+
 .dramma-slide-item__description {
     font-size: 13px;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .footer {
@@ -733,7 +765,7 @@ label.show-hide-content-action {
     font-weight: bold;
     line-height: 1.286;
     margin: 0;
-        margin-top: 10px;
+    margin-top: 10px;
 }
 
 .section-header {
@@ -1408,8 +1440,8 @@ label.show-hide-content-action {
     color: #777;
     font-size: 14px;
     font-weight: 300;
-       font-family: 'RobotoCondensed-LightItalic', sans-serif;
-           text-transform: none !important;
+    font-family: 'RobotoCondensed-LightItalic', sans-serif;
+    text-transform: none !important;
 }
 
 .thumbnail {
@@ -1423,9 +1455,11 @@ label.show-hide-content-action {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-.font-lt i{
-        margin-left: 10px ;
+
+.font-lt i {
+    margin-left: 10px;
 }
+
 .divider-column {
     height: 1px;
     border: 0;
@@ -1438,6 +1472,7 @@ label.show-hide-content-action {
     margin-top: 30px;
     zoom: 1;
 }
+
 .thumbnail {
     display: block;
     padding: 5px;

@@ -6,7 +6,7 @@
     float: right !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .about-content blockquote {
         font-size: 22px;
     }
@@ -57,9 +57,5 @@
 
     .gift-list-item {
         margin-bottom: 10px;
-    }
-
-    .fixed-header {
-        padding-right: 25px;
     }
 }
